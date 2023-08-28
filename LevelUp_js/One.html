@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch on java Script</title>
+</head>
+<body>
+about you : <input type="text" name="name" id="name" />
+            <button onclick="greet()">Greet</button>
+
+            <div class="greet">
+
+            </div>
+</body>
+<script type = "text/javascript">
+    function greet() {
+  //alert('hello')
+  var name = document.getElementById('name').value;
+ // alert(name); 
+ var String = "Hello Dear" + name;
+ document.getElementsByClassName('greet')[0].innerHTML=String;
+
+    }
+</script>
+</html>
